@@ -5,7 +5,7 @@ x = 0
 
 if a.isdigit() and len(a)==3:
     for item in a:
-        x = int(item) + x
+        x += int(item)
 else:
     print('вводите только трехзначные числа')
     exit(0)
