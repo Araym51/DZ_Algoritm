@@ -11,14 +11,14 @@ import random
 import cProfile
 
 
-def array_gen(a):
+def array_gen(n):
     """
     формирует массив на заданное количество элементов
-    :param a: длинна требуемого массива
+    :param n: длинна требуемого массива
     :return: возращает массив
     """
-    array = [0] * a
-    for i in range(a):
+    array = [0] * n
+    for i in range(n):
         array[i] = int(random.randint(1, 100000))
     return array
 
